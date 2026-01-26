@@ -1,0 +1,12 @@
+.blog-card{
+    margin: 15px 5%;
+    color: white;
+}
+.blog-card>h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--purple);
+}
+.blog-card>div{
+    margin: 10px 0px 10px 15px;
+}
