@@ -1,5 +1,9 @@
 :root{
-    --purple: rgb(221, 141, 221)
+    --purple: rgb(221, 141, 221);
+    --grey: rgb(180,180,180);
+    --cayden: rgb(255, 255, 255);
+    --peter: rgb(255, 176, 00);
+    --mo: rgb(20, 169, 255);
 }
 
 body{

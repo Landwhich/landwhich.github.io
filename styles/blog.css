@@ -1,12 +1,50 @@
 .blog-card{
-    margin: 15px 5%;
+    margin: 15px 25px;
     color: white;
 }
-.blog-card>h1{
+.post-header{
     font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--purple);
+    font-weight: bold;
+    margin:0;
+    display: grid;
+    grid-template-columns: 1fr 50%;
+}
+.post-header>date{
+    color: var(--grey);
+}
+.blog-card>img{
+    object-fit:cover;
+    width:60%;
+    margin: 5px 20%;
 }
 .blog-card>div{
-    margin: 10px 0px 10px 15px;
+    margin: 10px 0px 10px 5px;
+}
+.blog-grid{
+    display: grid;
+    grid-gap:15px;
+    grid-template-columns: 30% 70%;
+}
+.blog-grid>img{
+    width: 100%;
+}
+
+.will{
+    color: var(--purple);
+    border-color: var(--purple);
+}
+
+.peter{
+    color: var(--peter);
+    border-color: var(--peter);
+}
+
+.mo{
+    color: var(--mo);
+    border-color: var(--mo);
+}
+
+.cayden{
+    color: var(--cayden);
+    border-color: var(--cayden);
 }
