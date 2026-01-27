@@ -1,8 +1,8 @@
-crt::before {
+body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(rgba(255,255,255,0.10) 25%, transparent 80%);
+    background: linear-gradient(rgba(255,255,255,0.15) 25%, transparent 80%);
     background-size: 100% 4px;
     pointer-events: none;
     z-index: 2;
@@ -10,24 +10,25 @@ crt::before {
 
 @keyframes flicker {
     0%, 100%  { opacity: 0.4; }
-    25%       { opacity: 0.7; }
-    50%       { opacity: 0.2; }
+    25%       { opacity: 0.2; }
+    50%       { opacity: 0.3; }
 }
-crt::after {
+body::after {
     content: "";
-    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    position: fixed; 
+    top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(0,0,0,0.2);
     opacity: 0;
-    animation: flicker 3s infinite;
+    animation: flicker .3s infinite;
     pointer-events: none;
 }   
 
 @keyframes textShadow {
-    0%, 100%  { text-shadow: 0.3px 0 1px rgba(0,30,255,0.5), -0.44px 0 1px rgba(255,0,80,0.3), 0 0 3px; }
-    50%       { text-shadow: 1px 0 1px rgba(0,30,255,0.5), -0.44px 0 1px rgba(255,0,80,0.3), 0 0 3px; }
+    0%, 100%  { text-shadow: 0.7px 0 1px rgba(0,30,255,0.75), -0.44px 0 1px rgba(255,0,80,0.3), 0 0 3px; }
+    50%       { text-shadow: 1px 0 1px rgba(0,30,255,0.5), -0.44px 0 1px rgba(255,0,80,0.5), 0 0 3px; }
 }
 @keyframes boxShadow {
-    0%, 100%  { box-shadow: 4px 4px 4px rgba(0,30,255,0.5), -3px -3px 4px rgba(255,0,80,0.3);}
+    0%, 100%  { box-shadow: 4px 4px 4px rgba(0,30,255,0.65), -3px -3px 4px rgba(255,0,80,0.4);}
     50%       { box-shadow: 2px 2px 4px rgba(0,30,255,0.5), -1.5px -1.5px 4px rgba(255,0,80,0.3);}
 }
 .chromab-text {
