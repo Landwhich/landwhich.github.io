@@ -79,6 +79,29 @@
     <div class="bar-div chromab-box peter">  <!-- Peter -->
         <div class="blog-card">
             <div class="post-header">
+                <h1 class="chromab-text peter">Peter - Week 3</h1>
+                <date>2026-02-03</date>
+            </div>
+            <div>
+                <p>
+                    Relatively little progress this week since other deadlines have been piling on, but the next few days will be completely free to work on this with the team. Most of what I did was research, but now I have a good idea of the next steps I could take. 
+                    My main concern was looking at ways to implement the fishing rod in terms of physics based animation and in terms of gameplay mechanics. A secondary concern was considering the sound design of the game based on Mo’s concept art and whatever tone we’d want to have.
+                    <br><br>
+                    For the first part, I initially wanted to compare Verlet integration vs using Bezier curves for the fishing line, but I figured those implementations can be tested after I get soft body physics on the fishing rod down. 
+                    The fishing lure should also be considered for if we want to animate buoyancy or even allow for skipping the lure, which I’ve only seen one example of in the unreleased game About Fishing: https://x.com/WaterMuseum_/status/2018793890321670224
+                    <br><br>
+                    Mechanically, I’d imagine a simplified version as: cast the rod; the lure takes on the physics from the tip of the rod, with the line being drawn after the fact (maybe fishing line type can have an effect on the lure’s weight value to simulate line weight?); 
+                    the lure interacts with the surface of the water by checking collision angle (to determine whether it skips or sinks; the lure settles into the water at a static position until a fish interacts with it or the player reels it back in.
+                    <br><br>
+                    The sound design would be something I get a better handle on once the tone of the game and the scope of the game’s environments is more settled on. I know I can rent field recording equipment from Carleton alongside a recording booth, but I’m also considering making or buying a hydrophone to make underwater recordings. 
+                </p>
+                <div  class = "blog-grid">
+                    <img src="static/images/blog/about_fishing.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="blog-card">
+            <div class="post-header">
                 <h1 class="chromab-text peter">Peter - Week 2</h1>
                 <date>2026-02-03</date>
             </div>
@@ -287,4 +310,5 @@
 </body>
 
 </html>
+
 
