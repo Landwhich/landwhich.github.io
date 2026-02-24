@@ -22,10 +22,15 @@
 }
 .blog-grid{
     display: grid;
-    grid-gap:15px;
+    grid-gap:25px;
     grid-template-columns: 30% 70%;
 }
-.blog-grid>img{
+.blog-grid-2{
+    display: grid;
+    grid-gap:25px;
+    grid-template-columns: 35% 35% 30%;
+}
+.blog-grid>img, .blog-grid-2>img{
     width: 100%;
 }
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@100..700&display=swap');
+
 :root{
     --purple: rgb(221, 141, 221);
     --grey: rgb(180,180,180);
@@ -7,7 +9,16 @@
 }
 
 body{
+    font-family: "Victor Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
     background-color: black;
+}
+
+p{
+    margin: 10px 0;
 }
 
 .bar-div{
