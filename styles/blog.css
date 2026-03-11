@@ -30,7 +30,7 @@
     grid-gap:25px;
     grid-template-columns: 35% 35% 30%;
 }
-.blog-grid>img, .blog-grid-2>img{
+.blog-grid>img, .blog-grid-2>img, .blog-grid>video{
     width: 100%;
 }
 
